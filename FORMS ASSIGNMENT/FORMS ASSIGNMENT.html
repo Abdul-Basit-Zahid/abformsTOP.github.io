@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+<div>
+    <div>
+        <img src="pic4.jpg" id ="pic">
+    </div>
+
+    <div>
+        <img src="companyname1.png" id="companyname1">
+    </div>
+
+
+    <div class="icon">
+        <img src="icon1.jpg" id="icon">
+    </div>
+
+
+    <div class="together">
+
+        <div>
+            <img src="logo6.png" id="logo">
+        </div>
+        
+        <div class="logoText">
+            <h2>The green online delivery</h2>
+        </div>    
+    
+        <div>   
+        <form method="post" action="#">      
+        <div>
+            <h1>Get Started:</h1>
+        </div>
+        <div class="inputBox">
+            
+            <input type="text" id="fname-input" required>
+            <span id="fname">First Name:</span>
+
+        
+           
+            <input type="text" class="lname-input" maxlength="25" required>
+             <span id="lname">Last Name:</span>
+    </div>
+        <div class="inputBox2">
+            
+            <input type="email" class="email-input" required>
+            <span id="email">Email:</span>
+
+        
+           
+            <input type="number" class="phone-input" maxlength="11" minlength="11" required>
+             <span id="phone">Phone:</span>
+    </div>
+        <div class="inputBox3">
+            
+            <input type="password" class="password-input" required>
+            <span id="password">Password:</span>
+
+        
+           
+            <input type="password" class="cpassword-input" maxlength="25" minlength="8" required>
+             <span id="cpassword">Confirm Passowrd:</span>
+    </div>
+    <div>
+        <button type="submit" >Submit</button>
+        
+        <button type="reset" >Reset</button>
+    </div>
+
+    <div>
+        <p id="message"></p>
+    </div>
+
+    <div>
+        <p>Already have an account?
+            <span>
+                <a href="#">Login </a>
+            </span></p>
+    </div>
+    </form> 
+    
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        input{
+            margin-bottom: 20px;            
+            outline: none;
+            border: 2px solid #248277;
+            border-radius: 80px;
+            background: #023A2Dff;
+            color: #fff;
+            padding-right: 20px;
+            flex-direction: row;
+            margin-right: 40px;
+            width: 250px;
+            height: 35px;
+            padding: 20px;
+        }
+
+            body{
+            background:#248277;
+            
+        }
+        
+        span,
+        h1,
+        h2,
+        h3,
+        p{
+            color: #fff;
+        }
+
+
+        .inputBox span{
+            position: absolute;
+            margin-left: -275px;
+            transition: 0.4s;
+            margin-top: 5px;
+            pointer-events: none;
+        }
+        .inputBox2 span{
+            position: absolute;
+            margin-left: -275px;
+            transition: 0.4s;
+            margin-top: 5px;
+            pointer-events: none;
+        }
+        .inputBox3 span{
+            position: absolute;
+            margin-left: -275px;
+            transition: 0.4s;
+            margin-top: 5px;
+            pointer-events: none;
+        }
+
+        .inputBox{
+            padding: 20px;
+        }
+        .inputBox2{
+            padding: 20px;
+        }
+        .inputBox3{
+            padding: 20px;
+        }
+
+        #pic4{
+            max-width: 47%;
+            
+        }
+
+        #companyname1{
+            top: 0;
+            left: 0;
+            max-width: 15%;
+            position:absolute;
+        }
+        
+        form{
+            background: #248277;
+            position: absolute;
+            margin-left: 50%;
+            top: 10%;
+            
+            
+        }
+
+        .inputBox input:valid~#fname,
+        .inputBox input:focus~#fname{
+            transform: translateX(-15px) translateY(-20px) ;
+            background: #248277;
+            color: #fff;
+            padding:1px;
+            font-size: 12px;
+            border-radius: 3px;
+        }
+        .lname-input:valid~#lname,
+        .lname-input:focus~#lname{
+            transform: translateX(-10px) translateY(-18px) ;
+            background: #248277;
+            color: #fff;
+            padding:1px;
+            font-size: 12px;
+            border-radius: 3px;
+           
+        }
+
+
+        .inputBox2 input:valid~#email,
+        .inputBox2 input:focus~#email{
+            transform: translateX(-15px) translateY(-20px) ;
+            background: #248277;
+            color: #fff;
+            padding:1px;
+            font-size: 12px;
+            border-radius: 3px;
+           
+        }
+        .phone-input:valid~#phone,
+        .phone-input:focus~#phone{
+            transform: translateX(-10px) translateY(-18px) ;
+            background: #248277;
+            color: #fff;
+            padding:1px;
+            font-size: 12px;
+            border-radius: 3px;
+           
+        }
+
+    
+        .inputBox3 input:valid~#password,
+        .inputBox3 input:focus~#password{
+            transform: translateX(-15px) translateY(-20px) ;
+            background: #248277;
+            color: #fff;
+            padding:1px;
+            font-size: 12px;
+            border-radius: 3px;
+           
+        }
+        .cpassword-input:valid~#cpassword,
+        .cpassword-input:focus~#cpassword{
+            transform: translateX(-10px) translateY(-18px) ;
+            background: #248277;
+            color: #fff;
+            padding:1px;
+            font-size: 12px;
+            border-radius: 3px;
+       
+        }
+
+        #logo{
+                max-width: 8%;
+                position: absolute;
+                top: 30%;
+                opacity: transparent;
+            }
+
+        #icon{
+            max-width: 4%;
+            position: absolute;
+            right:0;
+            top:0;
+            cursor:pointer;
+       
+        }
+
+        .together{
+            display: inline-block;
+            opacity: transpanent;
+        }
+
+        .logoText{
+            background: #023A2Dff;
+            position: absolute;
+            top:  30%;
+            left: 8%;
+            padding-top: 10px;
+            padding-bottom: 12px;
+            padding-right: 7.2%;
+            font-size: 1.5em;
+            
+        }
+
+        .contact{
+            bottom: -1px;
+            position: absolute;
+        }
+
+        
+        button{
+            display: flex;
+            flex-direction: column;
+            background: #00CEA4ff;
+            text-align: center;
+            border-radius: 30px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            margin-left: 1%;
+            padding: 10px 300px 10px 300px;
+        }
+    </style>
+
+
+
+
+
+    <script>
+    function checkPassword() {
+        const password = document.querySelector(".password-input").value;
+        const confirmPassword = document.querySelector(".cpassword-input").value;
+        const message = document.querySelector("#message");
+
+        if (password != confirmPassword) {
+            message.textContent = " Passwords do not match";
+        } else {
+            message.textContent = "Passwords match";
+        }
+    }
+
+    const form = document.querySelector("form");
+
+form.addEventListener("submit", function(event){
+    event.preventDefault(); 
+        checkPassword();
+});
+;
+</script>
+
+</body>
+</html>
